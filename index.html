@@ -12,24 +12,60 @@
       <div class="flexTitle">
         <img src="img/scuLogo.png" alt="logo" width="150">
         <div id="title">
-          <h1>Senior Design Project Database</h1>
+          <h1>BroncoBuddies</h1>
+          <h5>Start meeting fellow Senior Broncos, today.</h5>
         </div>  
         <div class="flexInfo">
-          <p>Utilize the search function to quickly filter through past SCU student's Senior Design Projects, or set up a profile and meet students with similar interests to yours/seek faculty advisors that have open xxxxxx!</p>
+          <p>Set up a profile and utilize the match functionalities to quickly filter through current SCU students looking to make groups for upcoming Senior Design projects, or seek faculty advisors that have available research opportunities!</p>
         </div>
       </div>
       <div class="flexParent">
         <div class="flexChild" style="background-color: #b30738;">
-          <u><h2 style="color:#fff;">Search</h2></u>
-          <a href="searchHome.html" target="_blank" class="search-button">SEARCH</a>
+          <div id="subTitle">
+            <h2>I'm a Student!</h2>
+          </div>
+          <div id="formSpace" class="leftAlign">
+            <form name="studentFrom">
+              <label for="nameEntered"><b>Name:</b></label>
+              <input type="text" id="nameEntered" name="nameEntered" value="" required>
+              <br>
+              <br>
+              <label for="email"><b>SCU Email:</b></label>
+              <input type="text" id="email" name="email" value="" required>
+
+              <h4>Major:</h4>
+              <input type="checkbox" name="bioe">BIOE<br>
+              <input type="checkbox" name="civi">Civil<br>
+              <input type="checkbox" name="coen">CSEN<br>
+              <input type="checkbox" name="ele">ELEN<br>
+              <input type="checkbox" name="ecen">ECEN<br>
+              <input type="checkbox" name="gen">General<br>
+              <input type="checkbox" name="mech">MECH<br>
+              <input type="checkbox" name="web">WDE<br>
+
+              <h4>Are you interested in interdisciplinary projects?</h4>
+              <input type="radio" name="yes">Yes<br>
+              <input type="radio" name="no">No<br>
+
+              <h4>Upload a Profile Picture:</h4>
+              <input type="file" id="profilePhoto" name="profilePhoto" accept="image/*"><br>
+             
+              <h4>Feel free to share anything else on your profile here.</h4>
+              <textarea name="extra" rows="4"></textarea>
+              <br>
+              <br>
+
+              <button type="button" onclick="validateForm()">Sign Up</button>
+            </form>
+          </div>
         </div>
         <div class="flexChild" style="background-color: #b30738;">
-          <u><h2 style="color:#fff;">BroncoBuddies</h2></u>
+          <div id="subTitle">
+            <h2>I'm a Faculty Advisor!</h2>
+          </div>
+          <div id="formSpace">
 
-          <p>Sign up here to join BroncoBuddies.</p>
-
-
-          <a href="matchHome.html" target="_blank" class="match-button">MEET YOUR MATCH</a>
+          </div>
         </div>
       </div>
     </div>
