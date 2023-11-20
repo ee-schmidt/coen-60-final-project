@@ -13,60 +13,78 @@
         <img src="img/scuLogo.png" alt="logo" width="150">
         <div id="title">
           <h1>BroncoBuddies</h1>
-          <h5>Start meeting fellow Senior Broncos, today.</h5>
+          <h4>Start meeting fellow Senior Broncos, today.</h4>
+          <a href="learnMore.html">
+            <button type="button">Learn More</button>
+          </a>
         </div>  
-        <div class="flexInfo">
-          <p>Set up a profile and utilize the match functionalities to quickly filter through current SCU students looking to make groups for upcoming Senior Design projects, or seek faculty advisors that have available research opportunities!</p>
-        </div>
       </div>
-      <div class="flexParent">
-        <div class="flexChild" style="background-color: #b30738;">
-          <div id="subTitle">
-            <h2>I'm a Student!</h2>
+      <div id="signUp">
+        <div class="flexParent">
+          <div class="flexChild" style="background-color: #b30738;">
+            <div id="subTitle">
+              <h2>I'm a Student!</h2>
+            </div>
+            <div id="formSpace" class="leftAlign">
+              <form name="studentForm">
+                <label for="studentName"><b>Name:</b></label>
+                <input type="text" id="studentName" name="studentName" value="" required>
+                <br>
+                <br>
+                <label for="studentEmail"><b>SCU Email:</b></label>
+                <input type="text" id="studentEmail" name="studentEmail" value="" required>
+                <div id="errorStudent"></div>
+  
+                <h4>Major:</h4>
+                <input type="checkbox" name="bioe">BIOE<br>
+                <input type="checkbox" name="civi">Civil<br>
+                <input type="checkbox" name="coen">CSEN<br>
+                <input type="checkbox" name="ele">ELEN<br>
+                <input type="checkbox" name="ecen">ECEN<br>
+                <input type="checkbox" name="gen">General<br>
+                <input type="checkbox" name="mech">MECH<br>
+                <input type="checkbox" name="web">WDE<br>
+  
+                <h4>Are you interested in interdisciplinary projects?</h4>
+                <input type="radio" name="yes">Yes<br>
+                <input type="radio" name="no">No<br>
+
+                <h4>Feel free to share anything else on your profile here.</h4>
+                <textarea name="extra" rows="4"></textarea>
+                <br>
+                <h4>Upload a Profile Picture:</h4>
+                <input type="file" id="profilePhoto" name="profilePhoto" accept="image/*"><br>
+                <br>
+
+                <button type="button" onclick="validateStudentForm()">Sign Up</button>
+              </form>
+            </div>
           </div>
-          <div id="formSpace" class="leftAlign">
-            <form name="studentFrom">
-              <label for="nameEntered"><b>Name:</b></label>
-              <input type="text" id="nameEntered" name="nameEntered" value="" required>
-              <br>
-              <br>
-              <label for="email"><b>SCU Email:</b></label>
-              <input type="text" id="email" name="email" value="" required>
-
-              <h4>Major:</h4>
-              <input type="checkbox" name="bioe">BIOE<br>
-              <input type="checkbox" name="civi">Civil<br>
-              <input type="checkbox" name="coen">CSEN<br>
-              <input type="checkbox" name="ele">ELEN<br>
-              <input type="checkbox" name="ecen">ECEN<br>
-              <input type="checkbox" name="gen">General<br>
-              <input type="checkbox" name="mech">MECH<br>
-              <input type="checkbox" name="web">WDE<br>
-
-              <h4>Are you interested in interdisciplinary projects?</h4>
-              <input type="radio" name="yes">Yes<br>
-              <input type="radio" name="no">No<br>
-
-              <h4>Upload a Profile Picture:</h4>
-              <input type="file" id="profilePhoto" name="profilePhoto" accept="image/*"><br>
-             
-              <h4>Feel free to share anything else on your profile here.</h4>
-              <textarea name="extra" rows="4"></textarea>
-              <br>
-              <br>
-
-              <button type="button" onclick="validateForm()">Sign Up</button>
-            </form>
+          <div class="flexChild" style="background-color: #b30738;">
+            <div id="subTitle">
+              <h2>I'm a Faculty Advisor!</h2>
+            </div>
+            <div id="formSpace" class="leftAlign">
+              <form name="facultyForm">
+                <label for="facultyName"><b>Name:</b></label>
+                <input type="text" id="facultyName" name="facultyName" value="" required>
+                <br>
+                <br>
+                <label for="facultyEmail"><b>SCU Email:</b></label>
+                <input type="text" id="facultyEmail" name="facultyEmail" value="" required>
+                <h4>Please share a brief blurb on yourself, your current research projects, or what you personally are interested/passionated in!</h4>
+                <textarea name="researchBlurb" rows="4"></textarea>
+                <label for="availableSlots"><b>Available Slots:</b></label>
+                <input type="text" id="availableSlots" name="availableSlots">
+                <h4>Upload a Profile Picture:</h4>
+                <input type="file" id="profilePhoto" name="profilePhoto" accept="image/*"><br>
+                <br>
+                <button type="button" onclick="validateFacultyForm()">Sign Up</button>
+              </form>
+            </div>
           </div>
-        </div>
-        <div class="flexChild" style="background-color: #b30738;">
-          <div id="subTitle">
-            <h2>I'm a Faculty Advisor!</h2>
-          </div>
-          <div id="formSpace">
-
-          </div>
-        </div>
+      </div>
+      
       </div>
     </div>
   </div>

@@ -4,7 +4,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #f5f5f5;
-  color: #fff;
+
 }
 
 #center {
@@ -29,12 +29,25 @@ body {
   background-color: #fff;
   color:#b30738;
   padding:5px;
-  border-radius:40px;
+  border-radius:35px;
+}
+
+#info{
+  margin-left: 98px;
+  margin-right:98px;
 }
 
 .checkbox-group input,
 .radio-group input{
   margin-right: 10px;
+}
+
+#signUp{
+  background-color:#dfdbd3;
+  border-radius:40px;
+  padding: 37px;
+  align-items:center;
+  margin:10px;
 }
 
 #formSpace{
@@ -92,13 +105,17 @@ button:hover{
   margin:auto;
 }
 
+#broncoCenter{
+  color:#b30738;
+  font-weight: bold;
+}
 .flexTitle{
   text-align: center;
   width: 400px;
   background-color: #dfdbd3;
   border-radius: 40px;
   margin: 10px;
-  margin-right:100px;
+  margin-right:50px;
   padding:20px;
 }
 
@@ -121,8 +138,8 @@ button:hover{
   flex: 1;
   text-align: center;
   margin: 10px;
-  padding: 20px;
-  border-radius: 40px;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 .search-button, .match-button{
@@ -143,4 +160,31 @@ button:hover{
 
 .search-button:active, .match-button:active{
   opacity: 0.7;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
 }
