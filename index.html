@@ -26,13 +26,15 @@
               <h2>I'm a Student!</h2>
             </div>
             <div id="formSpace" class="leftAlign">
-              <form name="studentForm">
+              <form name="studentForm" action="action.php" method="POST">
                 <label for="studentName"><b>Name:</b></label>
                 <input type="text" id="studentName" name="studentName" value="" required>
                 <br>
                 <br>
                 <label for="studentEmail"><b>SCU Email:</b></label>
                 <input type="text" id="studentEmail" name="studentEmail" value="" required>
+                <label for="pwd1" >Password:</label>
+                <input type="password" minlength="8" id="pwd1" name="pwd1">
                 <div id="errorStudent"></div>
   
                 <h4>Major:</h4>
@@ -55,8 +57,9 @@
                 <h4>Upload a Profile Picture:</h4>
                 <input type="file" id="profilePhoto" name="profilePhoto" accept="image/*"><br>
                 <br>
+                <input type="submit" value="Sign Up" onclick="validateStudentForm()">
 
-                <button type="button" onclick="validateStudentForm()">Sign Up</button>
+                <!--<button type="button" onclick="validateStudentForm()">Sign Up</button>-->
               </form>
             </div>
           </div>
@@ -72,6 +75,8 @@
                 <br>
                 <label for="facultyEmail"><b>SCU Email:</b></label>
                 <input type="text" id="facultyEmail" name="facultyEmail" value="" required>
+                <label for="pwd2" >Password:</label>
+                <input type="password" minlength="8" id="pwd2" name="pwd2">
                 <h4>Please share a brief blurb on yourself, your current research projects, or what you personally are interested/passionated in!</h4>
                 <textarea name="researchBlurb" rows="4"></textarea>
                 <label for="availableSlots"><b>Available Slots:</b></label>
@@ -79,7 +84,8 @@
                 <h4>Upload a Profile Picture:</h4>
                 <input type="file" id="profilePhoto" name="profilePhoto" accept="image/*"><br>
                 <br>
-                <button type="button" onclick="validateFacultyForm()">Sign Up</button>
+                <input type="submit" value="Sign Up" onclick="validateStudentForm()">
+                
               </form>
             </div>
           </div>
