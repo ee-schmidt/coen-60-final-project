@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+	<title>Student Matching</title>
+	<link rel="stylesheet" href="matchStyle.css">
+    </head>
+    <body>
+	<div class="row">
+	    <div class="title">
+		<h1>Student Matching</h1>
+	    </div>
+	</div>
+
+	<div class="row">
+	    <div class="container">
+		<div id="image" class="image"></div>
+		<div class="infoParent">
+		    <h3 style="text-align:center" id="name"></h3>
+		    <h3>Major(s):</h3>
+		    <div class="infoChild">
+			<p id="major"></p>
+		    </div>
+		    <h3>Interdisciplinary?</h3>
+		    <div class="infoChild">
+			<p id="interdisciplinary"></p>
+		    </div>
+		    <h3>Additional Information:</h3>
+		    <div class="infoChild">
+			<p id="addInfo"></p>
+		    </div>
+		    <div class="buttons">
+			<button class="button skip" onclick="newStudent()">Skip</button>
+			<button class="button match" onclick="saveStudent()">Match!</button>
+		    </div>
+		</div>
+	    </div>
+	</div>
+	
+	<div class="row">
+	    <div class="buttons">
+		<a href="advisorMatch.html">
+		    <button class="button advisor">Search Advisors</button>
+		</a>
+		<a href="studentProfile.php">
+		    <button class="button profile">Visit Your Profile</button>
+		</a>
+	    </div>
+	</div>
+	<script src="matchStudent.js"></script>
+    </body>
+</html>

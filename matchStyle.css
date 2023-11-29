@@ -1,0 +1,135 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    box-shadow: 12px 12px #dfdbd3;
+    margin-left: 20px;
+    margin-right: 25px;
+    border: 10px solid #b30738;
+    border-radius: 40px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.title {
+    width: 30%;
+    padding: 1px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+    color: #f5f5f5;
+    text-align: center;
+    background-color: #b30738;
+}
+
+.infoParent {
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 20px;
+    width: 50%;
+    border: 10px solid #b30738;
+    border-radius: 40px;
+    padding-left: 20px;
+    background-color: #b30738;
+    max-height: 375px;
+    overflow: scroll;
+}
+
+.infoChild {
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-right: 20px;
+    background-color: #f5f5f5;
+    color: #000000;
+}
+
+.buttons {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.button {
+    background-color: #fff;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.match {
+    background-color: white;
+    color: black;
+    border: 2px solid #dfdbd3;
+}
+
+.match:hover {
+    background-color: #b30738;
+    color: white;
+}
+
+.skip {
+    background-color: white;
+    color: black;
+    border: 2px solid #dfdbd3;
+}
+
+.skip:hover {
+    background-color: #b30738;
+    color: white;
+}
+
+.advisor {
+    background-color: #b30738;
+    color: white;
+    border: 2px solid #dfdbd3;
+}
+
+.advisor:hover {
+    background-color: white;
+    color: black;
+}
+
+.profile {
+    background-color: #b30738;
+    color: white;
+    border: 2px solid #dfdbd3;
+}
+
+.profile:hover {
+    background-color: white;
+    color: black;
+}
+
+.row {
+    margin: auto;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
