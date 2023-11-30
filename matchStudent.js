@@ -55,3 +55,11 @@ function saveStudent() {
 
     newStudent();
 }
+
+function showStudentMatches(){
+	var studentMatches=document.getElementById('studentMatchDisp');
+	studentMatchDisp.innerHTML="<h3>Contact your Bronco Buddies by email:</h3>";
+	for(var i=0;i<savedNames.length;i++){
+		studentMatchDisp.innerHTML+="<p>"+savedNames[i]+"</p>";
+	}
+}
