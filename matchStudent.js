@@ -58,8 +58,8 @@ function saveStudent() {
 
 function showStudentMatches(){
 	var studentMatches=document.getElementById('studentMatchDisp');
-	studentMatchDisp.innerHTML="<h3>Contact your Bronco Buddies by email:</h3>";
+	studentMatches.innerHTML="<h3>Contact your Bronco Buddies by email:</h3>";
 	for(var i=0;i<savedNames.length;i++){
-		studentMatchDisp.innerHTML+="<p>"+savedNames[i]+"</p>";
+		studentMatches.innerHTML+="<p>"+savedNames[i]+"</p>";
 	}
 }

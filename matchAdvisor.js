@@ -51,10 +51,11 @@ function saveStudent() {
     newStudent();
 }
 
+
 function showAdvisorMatches(){
-	var facultyMatches=document.getElementById('advisorMatchDisp');
-	advisorMatchDisp.innerHTML="<h3>Contact your advisor matches by email:</h3>";
+	document.getElementById('advisorMatchDisp').innerHTML="<h3>Contact your advisor matches by email:</h3>";
+
 	for(var i=0;i<savedNames.length;i++){
-		advisorMatchDisp.innerHTML+="<p>"+savedNames[i]+"</p>";
+		document.getElementById('advisorMatchDisp').innerHTML+="<p>"+savedNames[i]+"</p><br>";
 	}
 }
