@@ -1,10 +1,10 @@
 // placeholder arrays for stored information
-var names = ["Sophia Smith", "Charlie Johnson", "Laura Brown"];
-var studentNames = ["ssmith@scu.edu", "cjohnson@scu.edu", "lbrown@scu.edu"];
-var majors = ["Web Design & Engineering", "Civil Engineering", "Mechanical Engineering"];
-var inter = ["Yes", "No", "Yes"];
-var additional = ["Interested in building web apps.", "Interested in humanitarian work.", "N/A"];
-var profiles = ["sophia.jpeg", "charlie.jpeg", "laura.jpeg"];
+var names = ["Meg Rawson", "Erin Schmidt", "India Bell"];
+var studentNames = ["mrawson@scu.edu", "eeschmidt@scu.edu", "ibell@scu.edu"];
+var majors = ["Web Design & Engineering Major, Computer Science & Engineering Minor", "Web Design & Engineering Major", "Web Design & Engineering Major"];
+var inter = ["Yes", "Yes", "Yes"];
+var additional = ["Passionate about accessibility within the world of technology, specifically technology literacy and usability for the elderly.", "Interested in building web apps, UI/UX, and pursuing full stack.", "Interested in UI/UX design and building web applications. Passionate about promoting diversity, equity, and inclusion within my work."];
+var profiles = ["meg.jpeg", "erin.jpeg", "india.jpeg"];
 
 var savedNames = [];
 var savedMajors = [];
@@ -54,12 +54,4 @@ function saveStudent() {
     savedProfiles.push(profiles[pos]);
 
     newStudent();
-}
-
-function showStudentMatches(){
-	var studentMatches=document.getElementById('studentMatchDisp');
-	studentMatches.innerHTML="<h3>Contact your Bronco Buddies by email:</h3>";
-	for(var i=0;i<savedNames.length;i++){
-		studentMatches.innerHTML+="<p>"+savedNames[i]+"</p>";
-	}
 }
