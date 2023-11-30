@@ -7,6 +7,22 @@ body {
     color: #fff;
 }
 
+#space{
+    border: 2px solid #b30738;
+    background-color: #fff;
+    color: #b30738;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    max-height: 300px;
+    overflow-y: auto;
+    max-width: 800px;
+
+  }
+
+
+
+
 .container {
     display: flex;
     align-items: center;

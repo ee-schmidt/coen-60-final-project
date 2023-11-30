@@ -51,3 +51,21 @@ function saveStudent() {
 
     newStudent();
 }
+
+function displayMatches(){
+	var studentMatchDisp = document.getElementById('studentMatchDisp');
+	var facultyMatchDisp = document.getElementById('facultyMatchDisp');
+
+
+	studentMatchDisp.innerHTML = "<h3>Student</h3>";
+	facultyMatchDisp.innerHTML = "<h3>Faculty</h3>";
+
+
+	for (var i = 0; i < studentMatches.length; i++) {
+			studentMatchDisp.innerHTML += "<p>" + studentMatches[i] + "</p>";
+	}
+
+	for (var j = 0; j < facultyMatches.length; j++) {
+			facultyMatchDisp.innerHTML += "<p>" + facultyMatches[j] + "</p>";
+	}
+}
