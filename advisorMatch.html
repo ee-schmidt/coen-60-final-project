@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+	<title>Advisor Matching</title>
+	<link rel="stylesheet" href="matchStyle.css">
+    </head>
+    <body>
+	<div class="row">
+	    <div class="title">
+		<h1>Advisor Matching</h1>
+	    </div>
+	</div>
+
+	<div class="row">
+	    <div class="container">
+		<div id="image" class="image"></div>
+		<div class="infoParent">
+		    <h3 style="text-align:center" id="firstlast"></h3>
+		    <h4 style="text-align:center" id="name"></h4>
+		    <h3>About:</h3>
+		    <div class="infoChild">
+			<p id="major"></p>
+		    </div>
+		    <h3>Slots Available:</h3>
+		    <div class="infoChild">
+			<p id="interdisciplinary"></p>
+		    </div>
+		    <div class="buttons">
+			<button class="button skip" onclick="newStudent()">Skip</button>
+			<button class="button match" onclick="saveStudent()">Match!</button>
+		    </div>
+		</div>
+	    </div>
+	</div>
+	
+	<div class="row">
+	    <div class="buttons">
+		<a href="studentMatch.html">
+		    <button class="button advisor">Search Students</button>
+		</a>
+		<a href="studentProfile.php">
+		    <button class="button profile">Visit Your Profile</button>
+		</a>
+	    </div>
+	</div>
+	<script src="matchAdvisor.js"></script>
+    </body>
+</html>
