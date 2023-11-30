@@ -96,9 +96,7 @@ if(!preg_match('/[0-9]/',$password2)){
         ?>
 
        </p></div>
-  <a href="showMatches.html"> 
-      <button type = "button">View Matches!</button>
-    </a>
+  
     </div>
   </div>
   </div>
