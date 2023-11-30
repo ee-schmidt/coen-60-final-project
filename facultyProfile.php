@@ -1,31 +1,6 @@
 <!DOCTYPE html>
 <link rel = "signup" href = "index.html">
-<?php/*
-if($_SERVER["REQUEST_METHOD"]=="POST"){
-  $taken=["eeschmidt@scu.edu"];
-  //$student=$_POST["studentName"];
-  $faculty=$_POST["facultyEmail"];
-  //$password1=$_POST["pwd1"];
-  $password2=$_POST["pwd2"];
-}
-if(in_array($faculty,$taken)){
-  echo "The email '$faculty' is already registered.<br>";
-}
 
-if(strlen($password2)<8){
-  echo "Password must be at least 8 characters long. <br>";
-  $length=strlen($password2);
-  echo "Your password is only '$length' characters long.<br>";
-} 
-
-if(!preg_match('/[0-9]/',$password2)){
-  echo "Password must include at least 1 digit.";
-}
-
-/*if(!in_array($faculty,$taken) && strlen($password)>=8 && is_numeric($password)){
-  echo "Account and password criteria satisfied.";
-}*/
-?>
 <html>
 <head>
   <meta charset="UTF-8" />
