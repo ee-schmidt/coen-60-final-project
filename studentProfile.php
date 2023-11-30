@@ -102,9 +102,9 @@ if(!in_array($email,$taken) && strlen($password)>=8 && is_numeric($password)){
         ?>
 
        </p></div>
-  <a href="matchHome.html"> 
-      <button type = "button">View Matches!</button>
-    </a>
+       <br>
+       <br>
+       <br>
     </div>
   </div>
   </div>
