@@ -26,7 +26,7 @@
               <h2>I'm a Student!</h2>
             </div>
             <div id="formSpace" class="leftAlign">
-              <form name="studentForm" action="studentProfile.php" method="POST">
+              <form name="studentForm" action="studentProfile.php" method="POST" enctype="multipart/form-data">
                 <label for="studentName"><b>Name:</b></label>
                 <input type="text" id="studentName" name="studentName" value="" required>
                 <br>
@@ -38,18 +38,18 @@
                 <div id="errorStudent"></div>
   
                 <h4>Major:</h4>
-                <input type="checkbox" name="bioe">BIOE<br>
-                <input type="checkbox" name="civi">Civil<br>
-                <input type="checkbox" name="coen">CSEN<br>
-                <input type="checkbox" name="ele">ELEN<br>
-                <input type="checkbox" name="ecen">ECEN<br>
-                <input type="checkbox" name="gen">General<br>
-                <input type="checkbox" name="mech">MECH<br>
-                <input type="checkbox" name="web">WDE<br>
+                <input type="checkbox" name="fmajor[]" value="BIOE">BIOE<br>
+                <input type="checkbox" name="fmajor[]" value="CIVIL">CIVIL<br>
+                <input type="checkbox" name="fmajor[]" value="CSEN">CSEN<br>
+                <input type="checkbox" name="fmajor[]" value="ELEN">ELEN<br>
+                <input type="checkbox" name="fmajor[]" value="ECEN">ECEN<br>
+                <input type="checkbox" name="fmajor[]" value="GENENG">General<br>
+                <input type="checkbox" name="fmajor[]" value="MECH">MECH<br>
+                <input type="checkbox" name="fmajor[]" value="WDE">WDE<br>
   
                 <h4>Are you interested in interdisciplinary projects?</h4>
-                <input type="radio" name="yes">Yes<br>
-                <input type="radio" name="no">No<br>
+                <input type="radio" name="interdis" value ="OPEN to Interdisciplinary">Yes<br>
+                <input type="radio" name="interdis" value = "RESTRICTED to major(s)">No<br>
 
                 <h4>Feel free to share anything else on your profile here.</h4>
                 <textarea name="extra" rows="4"></textarea>
@@ -68,7 +68,7 @@
               <h2>I'm a Faculty Advisor!</h2>
             </div>
             <div id="formSpace" class="leftAlign">
-              <form name="facultyForm">
+              <form name="facultyForm" action="facultyProfile.php" method="POST" enctype="multipart/form-data">
                 <label for="facultyName"><b>Name:</b></label>
                 <input type="text" id="facultyName" name="facultyName" value="" required>
                 <br>
@@ -84,7 +84,7 @@
                 <h4>Upload a Profile Picture:</h4>
                 <input type="file" id="profilePhoto" name="profilePhoto" accept="image/*"><br>
                 <br>
-                <input type="submit" value="Sign Up" onclick="validateStudentForm()">
+                <input type="submit" value="Sign Up" onclick="validateFacultyForm()">
                 
               </form>
             </div>

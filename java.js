@@ -8,7 +8,7 @@ function validateStudentForm(){
   }
 
   if(flag!=1){
-    window.open("studentProfile.php");
+    //window.open("studentProfile.php");
     return true;
   }
 }
@@ -23,7 +23,7 @@ function validateFacultyForm(){
   }
 
   if(flag!=1){
-    window.open("facultyProfile.php");
+    //window.open("facultyProfile.php");
     return true;
   }
 }
